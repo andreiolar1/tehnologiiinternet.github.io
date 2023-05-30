@@ -1,0 +1,70 @@
+
+.print{
+	width:600px;
+	height:400px;
+}
+.joc{
+	width:250px;
+	height:175px;
+}
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+	
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+#continut {
+    border-radius: 25px;
+    background: url(img/intfundal.gif);
+    background-position: left top;
+    background-repeat: repeat;
+	position: relative;
+    padding: 20px; 
+    width: 95%; 
+	margin:0 auto; 
+	min-height:100%;
+	/*overflow:auto;hidden;  proprietatea esentiala 1 */ 
+	
+}
+#maindiv {
+    border-radius: 25px;
+	vertical-align: middle; 
+	width:90%;
+	margin:0 auto;
+	background-color: white;
+	
+}
+.obiect{
+	/* proprietatile esentiale 2 */ 
+	border: 0px;
+	scrolling:no;
+	width:100%;
+
+}
+.bulina{
+	font-size: 30px;
+	width: 33%;
+	text-align: center;
+	color: grey;
+}
+
+
+
+
+
+.clearfix{ clear: both }

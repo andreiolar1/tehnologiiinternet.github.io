@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Review-uri top 10 jocuri electronice</title>
+<link rel="stylesheet" href="style.css"  type="text/css" >
+<script type="text/javascript" src="myscripts.js"></script>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+
+
+<script type="text/javascript">
+			load_din_adresa_fara_arg()
+</script>
+</head>
+<body background="img/fundal.jpg">
+    <div id="maindiv" >
+	
+		<div style="width: 95%; margin:0 auto;  padding: 10px 20px;">
+			<ul id="menu">
+				<li><a href="#" onclick="load_continut('main2.html')">HOME</a></li>
+				<li><a href="#" onclick="load_continut('main1.html')">JOCURI RECOMANDATE</a></li>
+				<li><a href="#" onclick="load_continut('maintop.html')">TOP JOCURI</a></li>
+				<li><a href="#" onclick="load_continut('main3.html') ">NEWS</a></li>
+				<li><a href="#" onclick="load_continut('contact.html')">DESPRE</a></li>
+			</ul> 
+		</div>
+		<!-- div class='clearfix'></div -->
+        <div  id="continut" >
+		<script type="text/javascript">
+			load_din_adresa();
+			//load_continut('main1.html');
+		</script>
+		</div>
+		<br/>
+	    <div style="width: 95%; margin:0 auto;  padding: 10px 20px;">
+		<b>&copy; Copyright by Andrei the First; 2016</b>
+		</div>
+	    <br/>
+		&nbsp;
+		<br/>
+    </div>
+		<script type="text/javascript" src="js/iframeResizer.min.js"></script> 
+		<script type="text/javascript">
+
+			iFrameResize({
+				log                     : false,                  // Enable console logging
+				enablePublicMethods     : true,                  // Enable methods within iframe hosted page
+				checkOrigin				: false,
+				resizedCallback         : function(messageData){ // Callback fn when resize is received
+					$('p#callback').html(
+						'<b>Frame ID:</b> '    + messageData.iframe.id +
+						' <b>Height:</b> '     + messageData.height +
+						' <b>Width:</b> '      + messageData.width + 
+						' <b>Event type:</b> ' + messageData.type
+					);
+				},
+				messageCallback         : function(messageData){ // Callback fn when message is received
+					$('p#callback').html(
+						'<b>Frame ID:</b> '    + messageData.iframe.id +
+						' <b>Message:</b> '    + messageData.message
+					);
+					alert(messageData.message);
+				},
+				closedCallback         : function(id){ // Callback fn when iFrame is closed
+					$('p#callback').html(
+						'<b>IFrame (</b>'    + id +
+						'<b>) removed from page.</b>'
+					);
+				}
+			});
+
+
+		</script>
+</body>
+
+</html>
